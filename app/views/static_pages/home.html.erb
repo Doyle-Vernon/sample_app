@@ -1,11 +1,10 @@
-<% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <title><%= full_title(yield(:title)) %></title>
   </head>
   <body>
-    <h1><%= yield(:title) %></h1>
+    <h1><%= full_title(yield(:title)) %></h1>
     Contents
   </body>
 </html>
